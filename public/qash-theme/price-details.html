@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from qash-html.vercel.app/price-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Feb 2022 18:35:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Qash - Crypto Exchange Dashboard UI Kit</title>
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon.png"
+    />
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div id="main-wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="header-content">
+                <div class="header-left">
+                  <div class="brand-logo">
+                    <a href="index.html">
+                      <img src="images/logo.png" alt="" />
+                      <span>Qash</span>
+                    </a>
+                  </div>
+                  <div class="search">
+                    <form action="#">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search Here"
+                        />
+                        <span class="input-group-text"
+                          ><i class="icofont-search"></i
+                        ></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="header-right">
+                  <div class="dark-light-toggle" onclick="themeToggle()">
+                    <span class="dark"><i class="icofont-moon"></i></span>
+                    <span class="light"><i class="icofont-sun-alt"></i></span>
+                  </div>
+                  <div class="notification dropdown">
+                    <div class="notify-bell" data-toggle="dropdown">
+                      <span><i class="icofont-alarm"></i></span>
+                    </div>
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-right
+                        notification-list
+                      "
+                    >
+                      <h4>Announcements</h4>
+                      <div class="lists">
+                        <a href="#" class="">
+                          <div class="d-flex align-items-center">
+                            <span class="me-3 icon success"
+                              ><i class="icofont-check"></i
+                            ></span>
+                            <div>
+                              <p>Account created successfully</p>
+                              <span>2020-11-04 12:00:23</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="">
+                          <div class="d-flex align-items-center">
+                            <span class="me-3 icon fail"
+                              ><i class="icofont-close"></i
+                            ></span>
+                            <div>
+                              <p>2FA verification failed</p>
+                              <span>2020-11-04 12:00:23</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="">
+                          <div class="d-flex align-items-center">
+                            <span class="me-3 icon success"
+                              ><i class="icofont-check"></i
+                            ></span>
+                            <div>
+                              <p>Device confirmation completed</p>
+                              <span>2020-11-04 12:00:23</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="">
+                          <div class="d-flex align-items-center">
+                            <span class="me-3 icon pending"
+                              ><i class="icofont-warning"></i
+                            ></span>
+                            <div>
+                              <p>Phone verification pending</p>
+                              <span>2020-11-04 12:00:23</span>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="settings-activity.html"
+                          >More <i class="icofont-simple-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="profile_log dropdown">
+                    <div class="user" data-toggle="dropdown">
+                      <span class="thumb"
+                        ><img src="images/profile/2.png" alt=""
+                      /></span>
+                      <span class="arrow"
+                        ><i class="icofont-angle-down"></i
+                      ></span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <div class="user-email">
+                        <div class="user">
+                          <span class="thumb"
+                            ><img src="images/profile/2.png" alt=""
+                          /></span>
+                          <div class="user-info">
+                            <h5>Jannatul Maowa</h5>
+                            <span>Qash.inc@gmail.com</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="user-balance">
+                        <div class="available">
+                          <p>Available</p>
+                          <span>0.00 BTC</span>
+                        </div>
+                        <div class="total">
+                          <p>Total</p>
+                          <span>0.00 USD</span>
+                        </div>
+                      </div>
+                      <a href="profile.html" class="dropdown-item">
+                        <i class="icofont-ui-user"></i>Profile
+                      </a>
+                      <a href="wallet.html" class="dropdown-item">
+                        <i class="icofont-wallet"></i>Wallet
+                      </a>
+                      <a href="settings-profile.html" class="dropdown-item">
+                        <i class="icofont-ui-settings"></i> Setting
+                      </a>
+                      <a href="settings-activity.html" class="dropdown-item">
+                        <i class="icofont-history"></i> Activity
+                      </a>
+                      <a href="lock.html" class="dropdown-item">
+                        <i class="icofont-lock"></i>Lock
+                      </a>
+                      <a href="signin.html" class="dropdown-item logout">
+                        <i class="icofont-logout"></i> Logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="brand-logo">
+          <a href="index.html"><img src="images/logo.png" alt="" /> </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Home"
+              >
+                <span><i class="icofont-ui-home"></i></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="trade.html"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Trade"
+              >
+                <span><i class="icofont-stack-exchange"></i></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="wallet.html"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Wallet"
+              >
+                <span><i class="icofont-wallet"></i></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="price.html"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Price"
+              >
+                <span><i class="icofont-price"></i></span>
+              </a>
+            </li>
+            <li class="logout">
+              <a
+                href="signin.html"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Signout"
+              >
+                <span><i class="icofont-power"></i></span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">&#169; <a href="#">codeefly</a></p>
+        </div>
+      </div>
+
+      <div class="content-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="this-coin-price">
+                    <h3>
+                      1,145,062.90
+                      <sub>USD</sub>
+                    </h3>
+                    <span class="text-danger"
+                      >-0.2.30% <i class="icofont-arrow-down"></i
+                    ></span>
+                  </div>
+                  <div id="btcChart"></div>
+                  <div class="chart-content text-center">
+                    <div class="row">
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">24hr Volume</p>
+                          <h5>$1236548.325</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Market Cap</p>
+                          <h5>19B USD</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Circulating Supply</p>
+                          <h5>29.4M BTC</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">All Time High</p>
+                          <h5>19.783.06 USD</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Typical hold time</p>
+                          <h5>88 days</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Trading activity</p>
+                          <h5>70% buy</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Popularity</p>
+                          <h5>#1 most held</h5>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+                      >
+                        <div class="chart-stat">
+                          <p class="mb-1">Popularity</p>
+                          <h5>#1 most held</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Price correlation with</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="balance-widget">
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc BTC"></i>
+                        <span
+                          >Bitcoin <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>64% </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc LTC"></i>
+                        <span
+                          >Litecoin <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc XRP"></i>
+                        <span
+                          >Ripple <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc DASH"></i>
+                        <span
+                          >Dash <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc XRP"></i>
+                        <span
+                          >Ripple <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc DASH"></i>
+                        <span
+                          >Dash <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc LTC"></i>
+                        <span
+                          >Litecoin <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc XRP"></i>
+                        <span
+                          >Ripple <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-title">
+                        <i class="cc DASH"></i>
+                        <span
+                          >Dash <br />
+                          <small>Moves together</small></span
+                        >
+                      </div>
+                      <div class="text-end">
+                        <h5>0.000242 USD</h5>
+                        <span>0.125 %</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="invite-content">
+                    <h4>Invite a friend and get $30</h4>
+                    <p>
+                      Know someone curious about crypto? You will receive up to
+                      $30 when they： 1.Buy Crypto 2. Deposit 3. Finish Trading
+                      Tasks <br />
+                      <a href="#">Learn more</a>
+                    </p>
+
+                    <div class="copy-link">
+                      <form action="#">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="https://www.qash.io/join/12345"
+                            id="myInput"
+                          />
+                          <span
+                            class="input-group-text c-pointer"
+                            onclick="myFunction()"
+                            >Copy</span
+                          >
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="social-share-link">
+                      <a href="#"
+                        ><span><i class="icofont-facebook"></i></span
+                      ></a>
+                      <a href="#"
+                        ><span><i class="icofont-twitter"></i></span
+                      ></a>
+                      <a href="#"
+                        ><span><i class="icofont-whatsapp"></i></span
+                      ></a>
+                      <a href="#"
+                        ><span><i class="icofont-telegram"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Deposit</h4>
+                </div>
+                <div class="card-body">
+                  <div class="price-deposit">
+                    <form action="#">
+                      <label class="form-label">BTC Deposit Address</label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="35Hb5B6qJa5ntYaNFN3hGYXdAjh919g2VH"
+                        />
+                        <span class="input-group-text">Copy</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="btn btn-primary btn-block"
+                      >Withdraw BTC</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Buy</h4>
+                </div>
+                <div class="card-body">
+                  <form method="post" name="myform" class="currency_validate">
+                    <label class="form-label">Buy BTC</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        name="currency_amount"
+                        class="form-control"
+                        placeholder="0.0214 BTC"
+                      />
+                      <select class="form-control" name="method">
+                        <option value="bank">USD</option>
+                        <option value="master">Euro</option>
+                      </select>
+                    </div>
+
+                    <button
+                      type="submit"
+                      name="submit"
+                      class="btn btn-success btn-block mt-4"
+                    >
+                      Buy Now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Sell</h4>
+                </div>
+                <div class="card-body">
+                  <form method="post" name="myform" class="currency_validate">
+                    <label class="form-label">Sell BTC</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        name="currency_amount"
+                        class="form-control"
+                        placeholder="0.0214 BTC"
+                      />
+                      <select class="form-control" name="method">
+                        <option value="bank">USD</option>
+                        <option value="master">Euro</option>
+                      </select>
+                    </div>
+
+                    <button
+                      type="submit"
+                      name="submit"
+                      class="btn btn-success btn-block mt-4"
+                    >
+                      Sell Now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/apexchart/apexcharts.min.js"></script>
+    <script src="js/plugins/pric-btc.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script></script>
+  </body>
+
+<!-- Mirrored from qash-html.vercel.app/price-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Feb 2022 18:35:00 GMT -->
+</html>
